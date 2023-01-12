@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    font-size: 62.5%;
+}
+header {
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    background-color: #2b2b2b;
+}
+a {
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+}
+.checkevent {
+    position: absolute;
+    opacity: 0;
+}
+.homebanner {
+    grid-column: 1 / 13;
+    grid-row: 2 / 12;
+    background-image: url(../imgs/aa2.jpg);
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#footer {
+    grid-column: 1 / 13;
+    grid-row: 12 / 13;
+    background-color: #2b2b2b;
+}
+.header__logo-container {
+    max-width: 15rem;
+}
+.footer__logo-container {
+    max-width: 15rem;
+}
+.header__logo {
+    max-width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.navbar__menu {
+    list-style-type: none;
+    display: flex;
+}
+.navbar__item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-size: 2em;
+    color: rgb(225, 215, 215);
+    font-weight: normal;
+}
+.navbar__item:hover {
+    color:white;
+}
+.homebanner__presentation {
+    margin: 0 auto;
+    width: 80em;
+    height: 40em;
+}
+box h1 {
+    font-size: 6em;
+    color: rgb(250, 247, 247);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 0 0 1.2em rgb(0, 0, 0);
+    border-top: 0.04em solid white;
+    border-bottom: 0.04em solid white;
+}
+box h2 {
+    font-size: 2.5em;
+}
+box p {
+    font-size: 2em;
+}
+section button {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 3rem;
+    border-radius: 0.3em;
+    border: 0.1em solid rgba(255, 255, 255, 0.656) ;
+    width: 9rem;
+    height: 2rem;
+    background-color: rgba(108, 99, 99, 0.674);
+    text-shadow: 0 0 0.9em black;
+    color: white;
+    font-size: 2.3em;
+    cursor: pointer;
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__navbar {
+    display: flex;
+    flex-direction: row;
+}
+footer nav img {
+    max-width: 2rem;
+    padding: 0 .7rem;
+}
+footer nav img:hover {
+    transform: rotateY(360deg);
+    transition: .5s;
+}
+footer .legal {
+    font-size: 1.3em;
+    color: white;
+    text-align: end;
+    font-size: .95rem;
+}
+.catalogo {
+    grid-column: 1 / 13;
+    grid-row: 2 / 12;
+    background-image: url(../imgs/2.jpg);
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.catalogo__box {
+    margin: 2rem auto;
+    width: 80em;
+    height: auto;
+}
+.rightarrow:hover {
+    transform: translateX(-.5em);
+}
+.rightarrow {
+    max-width: 1.8em;
+    cursor: pointer;
+    transition: all .6s;
+    animation-iteration-count: infinite;
+}
+.adressandgo {
+    display: flex;
+    justify-content: center;
+}
+.casa-info img{
+    position: relative;
+    right: -7em;
+
+}
+.casas-publicadas article {
+    width: 40vw;
+    height: 23vh;
+    background-color: rgba(255, 255, 255, 0.33);
+    border: .1rem solid white;
+    font-size: 1.5em;
+}
+.adress {
+    color: rgb(180, 26, 26);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.casa-info {
+    padding-top: 1rem;
+}
+.casa-info h2 {
+    padding-top: .5rem;
+}
+.casas-publicadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.estrella {
+    padding-top: .3rem;
+    font-size: 1.3em;
+}
+.casa-1 .descripcion-casa {
+    padding: .5rem;
+}
+.descripcion-casa {
+    border-radius: 1rem;
+    margin-right: .4rem;
+    margin-top: .5rem;
+    padding: .5rem;
+    font-weight: 600;
+    color: white;
+    background-color: #2b2b2b8d;
+    text-shadow: 0 0 .4em solid #2b2b2b;
+    box-shadow: 0 0 7px black;
+}
+.contacto {
+    grid-column: 1 / 13;
+    grid-row: 2 / 12;
+    background-image: url(../imgs/1a.jpg);
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contacto__box {
+    margin: 1rem auto;
+    width: 80em;
+}
+.nosotros {
+    grid-column: 1 / 13;
+    grid-row: 2 / 12;
+    background-image: url(../imgs/4.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.nosotros__box {
+    margin: 0 auto;
+    width: 80em;
+    margin-top: 1.5rem;
+}
+.nosotros h1 {
+    font-size: 4.5em;
+}
+.cardcontainer {
+    width: 100%;
+}
+.card {
+    display: flex;
+    background-color: #000000b7;
+    margin: 1rem 0;
+    width: 40%;
+    border-radius: 2.5rem;
+    padding: 1rem;
+}
+.card-1 {
+    margin-top:2rem
+}
+.teammate {
+    max-width: 1em;
+}
+.figure {
+    max-width: 15rem;
+    border: 0.1em solid rgba(255, 255, 255, 0.453);
+    border-radius: 50%;
+    background-color: rgba(72, 40, 20, 0.422);
+    margin: 1rem 0;
+}
+.teammate {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.card-2 {
+    transform:translateX(140%);
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+.card__container {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card h2 {
+    color: white;
+    text-shadow: 0 0 1em black;
+}
+.card-1 h2 {
+    font-size: 3.5em;
+}
+.card-2 h2 {
+    font-size: 3.5em;
+}
+.card-3 h2 {
+    font-size: 3.5em;
+}
+.puesto {
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 0 0 1em black;
+    text-align: center;
+    padding-top: .3rem;
+}
+.description {
+    font-size: 1.6em;
+    color: white;
+    text-shadow: 0 0 10em black;
+    padding-top: .6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+form label {
+    font-size: 1.7em;
+    color: white;
+    text-shadow: 0 0 0 .5em black;
+    text-decoration: underline;
+}
+.input {
+    min-width: 20rem;
+    border-radius: .5em;
+    background-color: rgba(7, 7, 7, 0.496);
+    padding: 1em;
+    font-size: 1.7em;
+    color: white;
+    font-weight: bold;
+    margin: .5em 0;
+}
+.contact-form__container {
+    background-color: rgba(0, 0, 0, 0.355);
+    margin: 2rem auto;
+    border: .15em solid rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+#contact-form {
+    padding: 3rem 8rem;
+}
+#submit-button {
+    margin-top: 1.5rem;
+    padding: .5em 1em;
+    background-color: transparent;
+    color: white;
+    border: .15em solid white;
+    border-radius: 1em;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.casa {
+    display: flex;
+}
+.casa-publicada {
+    max-width: 18em;
+    padding: .5rem;
+}
+.casa-1__container {
+    position: relative;
+    top: .7rem;
+}
+.casa-2__container {
+    min-width: 17rem;
+    position:relative;
+    top: .7em;
+}
+.casa-3__container {
+    max-width: 17rem;
+}
+.casa-img {
+    max-width: 100%;
+    box-shadow: 0 0 7px black;
+}
+@media screen and (max-width: 1400px) {
+.card {
+    width: 50%;
+}
+.card-2 {
+    transform: translateX(91%);
+}
+.casa-info img {
+    position: relative;
+    right: -3em;
+}
+.descripcion-casa {
+    font-size: .7em;
+}
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 60%;
+    }
+    .card-2 {
+        transform:translateX(35.5vw);
+        width: 60%;
+        display: flex;
+        flex-direction: row-reverse;
+        }
+}
+@media screen and (max-width: 992px) {
+    .card {
+        width: 80%;
+    }
+    .card-2 {
+        transform:translateX(1.5vw);
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        }
+}
+@media screen and (max-width: 992px) {
+    .card-2 {
+        transform: translateX(15.5vw);
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .45rem;
+        margin-top: .75rem;
+   }
+    .navbar__item {
+        padding: .1rem;
+        margin: .4rem;
+        font-size: 1.7em;
+    }
+    .nosotros {
+        padding-right: 4rem;
+    }
+    .nosotros__box {
+        margin: 0 auto;
+        width: 50em;
+        margin-top: 1.5rem;
+        transform: translateX(1rem);
+    }
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+    .card-2 {
+        transform:translateX(0);
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        }
+        .contacto__box {
+            width: 76em;
+        }
+        .contact-form__container {
+            width: 40rem;
+        }
+    footer nav img {
+        width: 1.5rem;
+    }
+    footer div p {
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 576px) {
+    body {
+        max-height: 150vh;
+    }
+    .homebanner {
+        grid-row: 2 / 12;
+        align-items: center;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+    .navbar__menu {
+        display: none;
+        flex-basis: 50%;
+        position: relative;
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nosotros {
+        min-height: 100vh;
+    }
+    .nosotros__box {
+        margin: 0 auto;
+        width: 40em;
+        margin-top: 1.5rem;
+    }
+    .card {
+        padding: .2rem;
+        transform: translateX(.9rem);
+    }
+    .card__container {
+        justify-content: center;
+    }
+    .cardcontainer figure {
+        max-height: 12rem;
+    }
+    .puesto {
+        font-size: .85rem;
+    }
+        .checkevent {
+        width: 35px;
+        height: 35px;
+        right: 24px;
+        top: 26px;
+        position: static;
+        position: absolute;
+        opacity: 0;
+    }
+    .checkevent:checked + ul {
+        display: block;
+    }
+    .contact-form__container {
+        width: 21rem;
+    }
+    #contact-form {
+        max-width: 21rem;
+        padding: .5rem;
+    }
+    form .input {
+        min-width: 17rem;
+    }
+    .contacto__box {
+        width: 50em;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    footer div p {
+        font-size: .7em;
+    }
+    .homebanner__presentation {
+        width: auto;
+    }
+    .homebanner__presentation  box{
+        width: 30rem;
+    }
+    .homebanner__presentation  box h1 {
+        border-top: 0.1em solid white;
+        border-bottom: 0.1em solid white;
+    }
+    .homebanner h1 {
+        font-size: 4em;
+        padding-left: 0;
+    }
+    header ul a {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contacto__box {
+        width: 35em;
+        font-size: .7em;
+    }
+    .description {
+        display: none;
+    }
+}
+@media screen and (max-width: 448px) {
+    .nosotros__box {
+        margin: 0 auto;
+        width: 30em;
+    }
+}
+@media screen and (max-width: 392px) {
+    .nosotros__box {
+        margin: 0 auto;
+        width: 20em;
+        margin-top: 1.5rem;
+    }
+    .contacto__box {
+        width: 45em;
+        font-size: .8em;
+}
+@media screen and (max-width: 380px) {
+    body {
+        max-height: 150vh;
+    }
+    .header__logo-container {
+        max-width: 12rem;
+    }
+    .hamburger {
+        transform: scale(.8);
+    }
+    .footer__logo-container {
+        max-width: 12rem;
+    }
+    footer .legal {
+        text-align: center;
+    }
+    .nosotros__box {
+        margin: 0 auto;
+        width: 30em;
+        margin-top: 1.5rem;
+    }
+    .card {
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .nosotros {
+        min-height: 85vh;
+    }
+    .nosotros__box {
+        transform: translateX(0);
+    }
+    .nosotros h1 {
+        font-size: 3em;
+    }
+    .card h2 {
+        font-size: 2.5em;
+    }    
+    body {
+        max-height: 120vh;
+    }
+    footer .legal {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .card {
+        padding: 0 .5rem;
+        transform: translateX(.5rem);
+    }
+    .contacto {
+        max-height: 100vh;
+    }
+    .contacto h1 {
+        font-size: 4em;
+    }
+    .contacto__box {
+        width: 25em;
+    }
+    form .input {
+        min-width: 17rem;
+    }
+}
+}
+}
